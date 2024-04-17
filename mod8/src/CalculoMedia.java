@@ -12,8 +12,10 @@ public class CalculoMedia {
         System.out.println("Valor total das notas: " + somaDasNotas);
         int mediaFinal = somaDasNotas / 4;
         System.out.println("Valor da Média Final: " + mediaFinal);
-        if(mediaFinal >= 6){
+        if(mediaFinal >= 7){
             System.out.println("Aluno Aprovado");
+        }else if(mediaFinal >= 5 || mediaFinal <= 6){
+            System.out.println("Aluno em recuperação");
         }else{
             System.out.println("Aluno Reprovado");
         }
